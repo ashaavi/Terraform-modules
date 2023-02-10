@@ -5,7 +5,7 @@ pipeline {
     stages{
         stage ('Git Checkout') {
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ashaavi/s3.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/ashaavi/Terraform-modules.git']])
             }
         }
         stage ('terraform init') {
