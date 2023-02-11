@@ -16,7 +16,7 @@ resource "aws_subnet" "public-subnet" {
 resource "aws_subnet" "private-subnet" {
     vpc_id = aws_vpc.my-vpc.id
     cidr_block = var.PvtSub-cidr-block
-    availability_zone = "ap-south-1"
+    availability_zone = "ap-south-1a"
 }
 
 resource "aws_internet_gateway" "igw" {
