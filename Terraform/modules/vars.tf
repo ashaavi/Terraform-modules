@@ -16,7 +16,7 @@ variable "public_instance_name" {
 }
 
 variable "vpc-cidr-block" {
-  default = "10.0.0.0/6"
+  default = "10.0.0.0/16"
 }
 variable "PvtSub-cidr-block" {
   default = "10.0.1.0/24"
