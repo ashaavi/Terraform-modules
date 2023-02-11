@@ -11,8 +11,8 @@ terraform {
 module "module-vpc" {
     source = "./Terraform/modules/"
     vpc-cidr-block = "10.0.0.0/16"
-    PvtSub-cidr-block = "10.0.1.0/24"
-    PubSub-cidr-block = "10.0.0.1/24"
+    PvtSub-cidr-block = "10.0.2.0/24"
+    PubSub-cidr-block = "10.0.1.0/24"
     public_instance_name = "priinstance"
     private_instance_name = "pubinstance" 
     key_pair = "newkey"
